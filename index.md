@@ -303,13 +303,13 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
-<h4 DB Browser for SQLite</h4>
+<h4>DB Browser for SQLite</h4>
 <p>
   You will need to install <a href="http://sqlitebrowser.org/">DB Browser for SQLite</a> to complete these lessons. DB Browser for SQLite provides a graphical user interface for connecting to and interacting with a SQLite database. This application bundles SQLite, so you won’t need to install SQLite separately.
 
 Note: on Windows, the PortableApp download is recommended as the regular version may take a long time to install on certain systems.
 </p>
-<h4 Download the data</h4>
+<h4>Download the data</h4>
 <p>
 To import data, you’ll need to open DB Browser for SQLite and download a zip file containing the data files for this tutorial.
 
