@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-venue: "Library Carpentry @ fdm.nrw - ONLINE"         # brief name of host site without address (e.g., "Euphoric State University")
+venue: "IT- und Datenkompetenzen, Fokus 2: SQL @ fdm.nrw - ONLINE"         # brief name of host site without address (e.g., "Euphoric State University")
 address: "Online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "DE"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "de"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "50.937531"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "6.960279"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Feb 6-7, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "09:00 - 16:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humandate: "Mar 6, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "09:00 - 13:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2023-02-06      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2023-02-07        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Rabea Müller", "Vanessa Scharf"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+enddate: 2023-02-06        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Rabea Müller"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["TBA"]   # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["muellerr@zbmed.de"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: https://pad.gwdg.de/LssYd6dVTWST19qJEHzE1Q # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+collaborative_notes: https://pad.gwdg.de/pZmsVAsTSj2hCAzvmRc8QQ # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -303,50 +303,17 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
+<h4 DB Browser for SQLite</h4>
 <p>
-  To participate in a
-  {% if page.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  You will need to install <a href="http://sqlitebrowser.org/">DB Browser for SQLite</a> to complete these lessons. DB Browser for SQLite provides a graphical user interface for connecting to and interacting with a SQLite database. This application bundles SQLite, so you won’t need to install SQLite separately.
+
+Note: on Windows, the PortableApp download is recommended as the regular version may take a long time to install on certain systems.
 </p>
+<h4 Download the data</h4>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+To import data, you’ll need to open DB Browser for SQLite and download a zip file containing the data files for this tutorial.
+
+1. Download the data files doaj-article-sample.zip from <a href="http://doi.org/10.5281/zenodo.2822005">Zenodo</a>.
+2. Open the zip file with the zip utlity on your machine and save the folder and files to a location where you can easily find them. For example, your Desktop.
+3. Contained in the zip file are two files, doaj-article-sample.db and doaj-article-sample.db.sql. You can either open the database file (less steps) or import the SQL file (more steps).
 </p>
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for DB Browser for SQLite
-- Download the data for the workshop
-
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instrucctions.
-{% endcomment %}
-{% if online != "false" %}
-{% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "pilot" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
-{% endif %}
