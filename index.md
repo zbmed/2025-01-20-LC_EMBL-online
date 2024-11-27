@@ -318,6 +318,42 @@ To import data, you’ll need to open DB Browser for SQLite and download a zip f
 3. Contained in the zip file are two files, doaj-article-sample.db and doaj-article-sample.db.sql. You can either open the database file (less steps) or import the SQL file (more steps). <br />
   
 <b>You can find detailed instruction on the <a href="https://librarycarpentry.org/lc-sql/setup.html">SQL Setup Page</a>.</b>
-  
-
 </p>
+
+<div id="shell-setup"> {% comment %} Start of the 'shell' section. {% endcomment %}
+  <h3>The Bash Shell</h3>
+  <p>
+    Bash is a widely used shell that allows you to perform simple tasks more quickly. 
+    Instructions for setup can be found in the <a href="https://librarycarpentry.org/lc-shell/index.html#setup">lesson</a>.
+  </p>
+</div>
+
+<div id="python-setup">
+  <h3>Python</h3>
+  <p>
+    Python is a popular language for research and is also suitable for general programming. 
+    A guide is available in the <a href="https://librarycarpentry.org/lc-python-intro/index.html#installing-python-using-anaconda">lesson</a>.
+  </p>
+</div>
+
+<div id="git-setup"> {% comment %} Start of the 'Git' section. GitHub browser compatibility
+  details can be found at https://help.github.com/articles/supported-browsers/{% endcomment %}
+  <h3>Git</h3>
+  <p>
+    Git is a version control system that helps you track who made changes, when, and what those changes were. 
+    It also provides options to easily update a shared or public version of your code on 
+    <a href="https://github.com/">https://github.com</a>.
+  </p>
+  <p>
+    Follow the instructions in the <a href="https://librarycarpentry.org/lc-git/index.html#setup">lesson</a> 
+    to install Git on your system.
+  </p>
+  <p>
+    You will need an account on <a href="https://github.com/">github.com</a> for parts of the Git lesson. 
+    A GitHub account is free. We recommend creating a GitHub account if you don’t already have one. 
+    Please consider what personal information you wish to share. 
+    For example, you can refer to GitHub’s 
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">guidelines on keeping your email address private</a>.
+  </p>
+</div>
+
