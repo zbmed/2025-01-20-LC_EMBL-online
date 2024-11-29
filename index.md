@@ -183,7 +183,7 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  to register for the event.
 </p>
 
 <p>
