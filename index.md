@@ -297,7 +297,7 @@ To import data, you’ll need to open DB Browser for SQLite and download a zip f
 2. Open the zip file with the zip utlity on your machine and save the folder and files to a location where you can easily find them. For example, your Desktop.<br />
 3. Contained in the zip file are two files, doaj-article-sample.db and doaj-article-sample.db.sql. You can either open the database file (less steps) or import the SQL file (more steps). <br />
   
-<b>You can find detailed instruction on the <a href="https://librarycarpentry.org/lc-sql/setup.html">SQL Setup Page</a>.</b>
+<b>You can find detailed instruction on the <a href="https://librarycarpentry.github.io/lc-sql/index.html#db-browser-for-sqlite">SQL Setup Page</a>.</b>
 </p>
 
 <div id="shell-setup"> {% comment %} Start of the 'shell' section. {% endcomment %}
